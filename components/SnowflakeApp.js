@@ -50,10 +50,10 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
+      'BACKEND': 0,
       'WEB_CLIENT': 0,
       'FOUNDATIONS': 0,
-      'SERVERS': 0,
+      'QUALITY': 0,
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
       'CRAFT': 0,
@@ -67,7 +67,7 @@ const emptyState = (): SnowflakeAppState => {
       'RECRUITING': 0,
       'COMMUNITY': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'BACKEND'
   }
 }
 
@@ -76,10 +76,10 @@ const defaultState = (): SnowflakeAppState => {
     name: 'Amelia Taylor',
     title: 'Staff Engineer',
     milestoneByTrack: {
-      'MOBILE': 1,
+      'BACKEND': 1,
       'WEB_CLIENT': 2,
       'FOUNDATIONS': 3,
-      'SERVERS': 2,
+      'QUALITY': 2,
       'PROJECT_MANAGEMENT': 4,
       'COMMUNICATION': 1,
       'CRAFT': 1,
@@ -93,7 +93,7 @@ const defaultState = (): SnowflakeAppState => {
       'RECRUITING': 3,
       'COMMUNITY': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'BACKEND'
   }
 }
 
@@ -155,7 +155,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{margin: '19px auto 0', width: 142}}>
+        <div style={{margin: '19px auto 0', width: 210}}>
           <a href="https://medium.com/" target="_blank">
             <Wordmark />
           </a>
@@ -200,10 +200,10 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>
-            Made with ❤️ by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
-            Learn about the <a href="https://medium.com/s/engineering-growth-framework" target="_blank">growth framework</a>.
-            Get the <a href="https://github.com/Medium/snowflake" target="_blank">source code</a>.
-            Read the <a href="https://medium.com/p/85e078bc15b7" target="_blank">terms of service</a>.
+            Made by <a href="https://www.weareconvivio.com/" target="_blank">Convivio</a>.
+            Based on work by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
+            Get the <a href="https://github.com/ConvivioTeam/ProfessionalDevelopment" target="_blank">source code</a>,
+            or the original <a href="https://github.com/Medium/snowflake">Medium source code</a>.
           </div>
         </div>
       </main>

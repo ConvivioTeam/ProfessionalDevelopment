@@ -1,14 +1,14 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
+export type TrackId = 'BACKEND' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
   'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
   'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
   'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
+  'BACKEND': Milestone,
   'WEB_CLIENT': Milestone,
   'FOUNDATIONS': Milestone,
   'SERVERS': Milestone,
@@ -61,6 +61,27 @@ export const pointsToLevels = {
   '319': '6.3',
 }
 
+export const salaryLevels = {
+  '1.1': '33000',
+  '1.2': '33750',
+  '1.3': '34500',
+  '2.1': '38000',
+  '2.2': '39000',
+  '2.3': '40000',
+  '3.1': '44000',
+  '3.2': '45000',
+  '3.3': '46250',
+  '4.1': '51500',
+  '4.2': '52750',
+  '4.3': '54000',
+  '5.1': '60750',
+  '5.2': '62250',
+  '5.3': '63750',
+  '6.1': '72250',
+  '6.2': '74000',
+  '6.3': '75750',
+}
+
 export const maxLevel = 319
 
 export type Track = {
@@ -75,7 +96,7 @@ export type Track = {
 }
 
 type Tracks = {|
-  'MOBILE': Track,
+  'BACKEND': Track,
   'WEB_CLIENT': Track,
   'FOUNDATIONS': Track,
   'SERVERS': Track,
@@ -94,9 +115,9 @@ type Tracks = {|
 |}
 
 export const tracks: Tracks = {
-  "MOBILE": {
-    "displayName": "Mobile",
-    "category": "A",
+  "BACKEND": {
+    "displayName": "Backend",
+    "category": "Building",
     "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
     "milestones": [{
       "summary": "Works effectively within established iOS or Android architectures, following current best practices",
@@ -163,7 +184,7 @@ export const tracks: Tracks = {
 
   "WEB_CLIENT": {
     "displayName": "Web client",
-    "category": "A",
+    "category": "Building",
     "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
     "milestones": [{
       "summary": "Works effectively within established web client architectures, following current best practices",
@@ -230,7 +251,7 @@ export const tracks: Tracks = {
 
   "FOUNDATIONS": {
     "displayName": "Foundations",
-    "category": "A",
+    "category": "Building",
     "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases and machine learning",
     "milestones": [{
       "summary": "Works effectively within established structures, following current best practices",
@@ -295,9 +316,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "SERVERS": {
-    "displayName": "Servers",
-    "category": "A",
+  "Quality": {
+    "displayName": "Quality",
+    "category": "Building",
     "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
     "milestones": [{
       "summary": "Works effectively within established server side frameworks, following current best practices",
@@ -364,7 +385,7 @@ export const tracks: Tracks = {
 
   "PROJECT_MANAGEMENT": {
     "displayName": "Project management",
-    "category": "B",
+    "category": "Executing",
     "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
     "milestones": [{
       "summary": "Effectively delivers individual tasks",
@@ -431,7 +452,7 @@ export const tracks: Tracks = {
 
   "COMMUNICATION": {
     "displayName": "Communication",
-    "category": "B",
+    "category": "Executing",
     "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
     "milestones": [{
       "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
@@ -498,7 +519,7 @@ export const tracks: Tracks = {
 
   "CRAFT": {
     "displayName": "Craft",
-    "category": "B",
+    "category": "Executing",
     "description": "Embodies and promotes practices to ensure excellent quality products and services",
     "milestones": [{
       "summary": "Delivers consistently good quality work",
@@ -565,7 +586,7 @@ export const tracks: Tracks = {
 
   "INITIATIVE": {
     "displayName": "Initiative",
-    "category": "B",
+    "category": "Executing",
     "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
     "milestones": [{
       "summary": "Identifies opportunities for organizational change or product improvements",
@@ -632,7 +653,7 @@ export const tracks: Tracks = {
 
   "CAREER_DEVELOPMENT": {
     "displayName": "Career development",
-    "category": "C",
+    "category": "Supporting",
     "description": "Provides strategic support to engineers to help them build the career they want",
     "milestones": [{
       "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
@@ -699,7 +720,7 @@ export const tracks: Tracks = {
 
   "ORG_DESIGN": {
     "displayName": "Org design",
-    "category": "C",
+    "category": "Supporting",
     "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
     "milestones": [{
       "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
@@ -766,7 +787,7 @@ export const tracks: Tracks = {
 
   "WELLBEING": {
     "displayName": "Wellbeing",
-    "category": "C",
+    "category": "Supporting",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     "milestones": [{
       "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
@@ -833,7 +854,7 @@ export const tracks: Tracks = {
 
   "ACCOMPLISHMENT": {
     "displayName": "Accomplishment",
-    "category": "C",
+    "category": "Supporting",
     "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
     "milestones": [{
       "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
@@ -900,7 +921,7 @@ export const tracks: Tracks = {
 
   "MENTORSHIP": {
     "displayName": "Mentorship",
-    "category": "D",
+    "category": "Strengthening",
     "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
     "milestones": [{
       "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
@@ -967,7 +988,7 @@ export const tracks: Tracks = {
 
   "EVANGELISM": {
     "displayName": "Evangelism",
-    "category": "D",
+    "category": "Strengthening",
     "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
       "summary": "Represents Medium well externally, and influences individuals positively",
@@ -1034,7 +1055,7 @@ export const tracks: Tracks = {
 
   "RECRUITING": {
     "displayName": "Recruiting",
-    "category": "D",
+    "category": "Strengthening",
     "description": "Strengthens Medium's team by bringing in excellent staff members",
     "milestones": [{
       "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Medium",
@@ -1101,7 +1122,7 @@ export const tracks: Tracks = {
 
   "COMMUNITY": {
     "displayName": "Community",
-    "category": "D",
+    "category": "Strengthening",
     "description": "Builds community internally, gives of themself to the team, and champions and extols company values",
     "milestones": [{
       "summary": "Is available and present on current teams, and works to contribute positively to company culture",

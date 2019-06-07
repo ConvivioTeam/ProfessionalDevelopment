@@ -1,7 +1,8 @@
 // @flow
 
-import { pointsToLevels, milestoneToPoints, trackIds, totalPointsFromMilestoneMap } from '../constants'
+import { pointsToLevels, milestoneToPoints, trackIds, totalPointsFromMilestoneMap, salaryLevels } from '../constants'
 import type { MilestoneMap } from '../constants'
+import CurrencyFormat from 'react-currency-format'
 import React from 'react'
 
 type Props = {
@@ -28,6 +29,8 @@ class PointSummaries extends React.Component<Props> {
       }
     }
 
+    const salaryLevel = salaryLevels[currentLevel]
+
     const blocks = [
       {
         label: 'Current level',
@@ -40,6 +43,10 @@ class PointSummaries extends React.Component<Props> {
       {
         label: 'Points to next level',
         value: pointsToNextLevel
+      },
+      {
+        label: 'Salary',
+        value: <CurrencyFormat value={salaryLevel} displayType={'text'} thousandSeparator={true} prefix={'£'}></CurrencyFormat>
       }
     ]
 
