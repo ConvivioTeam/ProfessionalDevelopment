@@ -11,7 +11,7 @@ before_install:
 install:
   - yarn
 script: yarn run export
-after_script: cp .nojekyll out/.nojekyll
+before_deploy: cp .nojekyll out/.nojekyll
 deploy:
   provider: pages
   skip-cleanup: true
