@@ -2,9 +2,9 @@
 import * as d3 from 'd3'
 
 export type TrackId = 'BACKEND' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
-  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
-  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
-  'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
+  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'USERS' |
+  'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |'CAREER_DEVELOPMENT' | 
+  'AMBASSADORSHIP' | 'RECRUITING' | 'COMMUNITY' | 'KNOWLEDGE'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
@@ -15,15 +15,15 @@ export type MilestoneMap = {
   'PROJECT_MANAGEMENT': Milestone,
   'COMMUNICATION': Milestone,
   'CRAFT': Milestone,
-  'INITIATIVE': Milestone,
-  'CAREER_DEVELOPMENT': Milestone,
+  'USERS': Milestone,
   'ORG_DESIGN': Milestone,
   'WELLBEING': Milestone,
   'ACCOMPLISHMENT': Milestone,
-  'MENTORSHIP': Milestone,
-  'EVANGELISM': Milestone,
+  'CAREER_DEVELOPMENT': Milestone,
+  'AMBASSADORSHIP': Milestone,
   'RECRUITING': Milestone,
-  'COMMUNITY': Milestone
+  'COMMUNITY': Milestone,
+  'KNOWLEDGE': Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, 5, 6]
 
@@ -103,13 +103,13 @@ type Tracks = {|
   'PROJECT_MANAGEMENT': Track,
   'COMMUNICATION': Track,
   'CRAFT': Track,
-  'INITIATIVE': Track,
+  'USERS': Track,
   'CAREER_DEVELOPMENT': Track,
   'ORG_DESIGN': Track,
   'WELLBEING': Track,
   'ACCOMPLISHMENT': Track,
   'MENTORSHIP': Track,
-  'EVANGELISM': Track,
+  'AMBASSADORSHIP': Track,
   'RECRUITING': Track,
   'COMMUNITY': Track
 |}
@@ -218,8 +218,8 @@ export const tracks: Tracks = {
         "Acts a caretaker for all of web client code",
       ],
       "examples": [
-        "Designed font loading strategy for Medium",
-        "Researched utility of service workers for Medium",
+        "Designed font loading strategy for Convivio",
+        "Researched utility of service workers for Convivio",
         "Designed and implemented ResponseScreen",
       ],
     }, {
@@ -230,8 +230,8 @@ export const tracks: Tracks = {
         "Makes architectural decisions that eliminate entire classes of bugs",
       ],
       "examples": [
-        "Designed Medium's post morpher and delta system",
-        "Implemented Medium's scrolling text over image blur",
+        "Designed Convivio's post morpher and delta system",
+        "Implemented Convivio's scrolling text over image blur",
         "Designed and pioneered proto-based model storage",
       ],
     }, {
@@ -286,7 +286,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Designed Ansible configuration management",
-        "Built Medium's realtime stats pipeline",
+        "Built Convivio's realtime stats pipeline",
         "Designed flexible framework for writing machine learning jobs",
       ],
     }, {
@@ -310,16 +310,16 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Invented a novel ML technique that advanced the state of the art",
-        "Defined and developed Medium's continuous delivery strategy",
+        "Defined and developed Convivio's continuous delivery strategy",
         "Developed and implemented HA strategy",
       ],
     }],
   },
 
-  "Quality": {
+  "QUALITY": {
     "displayName": "Quality",
     "category": "Building",
-    "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
+    "description": "Develops expertise in data security, quality assurance, testing and automation",
     "milestones": [{
       "summary": "Works effectively within established server side frameworks, following current best practices",
       "signals": [
@@ -352,7 +352,7 @@ export const tracks: Tracks = {
         "Writes playbooks for new service maintenance",
       ],
       "examples": [
-        "Implemented Google Auth login to Medium",
+        "Implemented Google Auth login to Convivio",
         "Implemented payments integration with Stripe",
         "Built Textshots server",
       ],
@@ -364,7 +364,7 @@ export const tracks: Tracks = {
         "Makes appropriate buy vs build choices",
       ],
       "examples": [
-        "Designed Medium's ranked feed architecture",
+        "Designed Convivio's ranked feed architecture",
         "Designed custom domains architecture",
         "Created Gotham framework for creating Go services",
       ],
@@ -376,7 +376,7 @@ export const tracks: Tracks = {
         "Identifies and solves systemic problems with current architecture",
       ],
       "examples": [
-        "Researched, vetted, and selected Go as Medium's statically typed language",
+        "Researched, vetted, and selected Go as Convivio's statically typed language",
         "Defined microservices architecture and medium2 migration plan",
         "Defined and implemented proprietary IP core to the company's success",
       ],
@@ -499,7 +499,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Lead off-site workshop on interviewing",
-        "Wrote Medium's growth framework and rationale",
+        "Wrote Convivio's growth framework and rationale",
         "Aligned the entire organization around claps",
       ],
     }, {
@@ -566,7 +566,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
+        "Iterated repeatedly to develop Convivio's underlines solution",
         "Defined and oversaw plan for closing Heartbleed vulnerability",
       ],
     }, {
@@ -584,10 +584,10 @@ export const tracks: Tracks = {
     }],
   },
 
-  "INITIATIVE": {
-    "displayName": "Initiative",
+  "USERS": {
+    "displayName": "Users",
     "category": "Executing",
-    "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
+    "description": "Focuses on understanding users, what they need, what they value, their abilities, and also their limitations",
     "milestones": [{
       "summary": "Identifies opportunities for organizational change or product improvements",
       "signals": [
@@ -645,8 +645,8 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Migrated the organization from Holacracy",
-        "Built Medium Android prototype and convinced execs to fund it",
-        "Convinced leadership and engineering org to move to Medium Lite architecture",
+        "Built Convivio Android prototype and convinced execs to fund it",
+        "Convinced leadership and engineering org to move to Convivio Lite architecture",
       ],
     }],
   },
@@ -919,136 +919,69 @@ export const tracks: Tracks = {
     }],
   },
 
-  "MENTORSHIP": {
-    "displayName": "Mentorship",
+  "AMBASSADORSHIP": {
+    "displayName": "Ambassadorship",
     "category": "Strengthening",
-    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
+    "description": "Promotes Convivio to the outside world and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
-      "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
-      "signals": [
-        "Makes themself available for informal support and advice",
-        "Acts as sounding board for peers and more junior members",
-        "Provides sound advice when asked",
-      ],
-      "examples": [
-        "Acted as an onboarding buddy",
-        "Paired with an engineer to help them with an unfamiliar area",
-        "Helped a colleague understand their feelings",
-      ],
-    }, {
-      "summary": "Mentors people proactively, and guides people to realizations rather than providing the answer",
-      "signals": [
-        "Takes time to explain concepts and best practices",
-        "Asks questions to illuminate concepts, rather than stating them",
-        "Allows others to lead efforts when it will help their development",
-      ],
-      "examples": [
-        "Shared interesting article with a team member to help with their growth",
-        "Offered unprompted feedback to help growth, with empathy",
-        "Lead from behind to support someone new to a leadership role",
-      ],
-    }, {
-      "summary": "Teaches small groups of engineers and contributes to Medium's shared knowledge base",
-      "signals": [
-        "Avoids siloing information when it can be usefully shared with others",
-        "Works to increase the bus factor of systems",
-        "Finds tools that work best for a team member's personality",
-      ],
-      "examples": [
-        "Gave a brown bag presentation on payments",
-        "Wrote Hatch post on avoiding RDS backfill issues",
-        "Wrote Medium-U content module",
-      ],
-    }, {
-      "summary": "Encourages people to mentor each other, and creates ways for them to do so",
-      "signals": [
-        "Defines an entire curriculum for a discipline",
-        "Draws positive attention to well-modeled mentor and teaching behaviours",
-        "Creates brown bag series and lines up speakers",
-      ],
-      "examples": [
-        "Created and lead Medium's Women in Eng group",
-        "Organized an Eng All Hands with an outside speaker",
-        "Designed and taught web client guild curriculum",
-      ],
-    }, {
-      "summary": "Instills and promotes a culture of learning and development within the team",
-      "signals": [
-        "Sets incentive structures to recognise and reward mentorship",
-        "Empowers team members to develop themselves",
-        "Role models productive and healthy mentor relationships",
-      ],
-      "examples": [
-        "Instituted the professional education budget for engineers",
-        "Mentored mentors",
-        "Started the eng advisor program and lined up external mentors",
-      ],
-    }],
-  },
-
-  "EVANGELISM": {
-    "displayName": "Evangelism",
-    "category": "Strengthening",
-    "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
-    "milestones": [{
-      "summary": "Represents Medium well externally, and influences individuals positively",
+      "summary": "Represents Convivio well externally, and influences individuals positively",
       "signals": [
         "Shares personal and organizational successes with their network",
-        "Attends Medium-hosted events and talks with guests",
+        "Attends Convivio-hosted events and talks with guests",
         "Communicates genuine and honest excitement about their work externally",
       ],
       "examples": [
-        "Shared a Medium product launch post on Facebook",
+        "Shared a Convivio product launch post on Facebook",
         "Acted as a guide for a non-friend visitor to the office",
         "Supported PR efforts by giving a quote or having a photo taken",
       ],
     }, {
       "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
       "signals": [
-        "Takes meaningful action to introduce people to Medium",
-        "Joined public Slack group and represented Medium appropriately, and well",
-        "Organizes positive small- or medium-sized events that bring people to Medium",
+        "Takes meaningful action to introduce people to Convivio",
+        "Joined public Slack group and represented Convivio appropriately, and well",
+        "Organizes positive small- or medium-sized events that bring people to Convivio",
       ],
       "examples": [
         "Volunteered as a helper for CODE2040 writing workshop",
         "Organized a short tour of the office by college students",
-        "Talked at a Women Who Code event hosted at Medium",
+        "Talked at a Women Who Code event hosted at Convivio",
       ],
     }, {
-      "summary": "Works hard to positively influence large groups of people on their views of Medium",
+      "summary": "Works hard to positively influence large groups of people on their views of Convivio",
       "signals": [
         "Mentors or participates in a high visibility way in an external organization",
         "Builds fruitful partnerships with external organizations",
-        "Writes blog posts about Medium that receive moderate traffic",
+        "Writes blog posts about Convivio that receive moderate traffic",
       ],
       "examples": [
-        "Represented Medium on a panel at a conference of industry experts",
+        "Represented Convivio on a panel at a conference of industry experts",
         "Established close ties with Creative Commons",
         "Built a durable, long-standing relationship with Code2040",
       ],
     }, {
-      "summary": "Establishes Medium as an great, innovative company and workplace to the whole industry",
+      "summary": "Establishes Convivio as an great, innovative company and workplace to the whole industry",
       "signals": [
         "Establishes themself as an industry thought leader who attracts talent",
-        "Publishes material about Medium's organizational or technical innovations",
-        "Leverages significant following to evangelise Medium",
+        "Publishes material about Convivio's organizational or technical innovations",
+        "Leverages significant following to evangelise Convivio",
       ],
       "examples": [
-        "Published a paper on Medium technology in a peer-reviewed journal",
+        "Published a paper on Convivio technology in a peer-reviewed journal",
         "Authored joint-press release with EFF on DNT",
-        "Published “Why Content Editable Is Terrible” on the Medium engineering blog",
+        "Published “Why Content Editable Is Terrible” on the Convivio engineering blog",
       ],
     }, {
-      "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
+      "summary": "Introduces Convivio in a positive light to a wider audience outside the industry",
       "signals": [
         "Delivers key messages to broad, mainstream audiences",
-        "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition and adoption of Medium in significant numbers",
+        "Influences people with large audiences to talk about Convivio positively",
+        "Drives recognition and adoption of Convivio in significant numbers",
       ],
       "examples": [
         "Published or interviewed in a mainstream newspaper or website outside tech",
         "Keynoted a conference with international attention",
-        "Represented Medium in national televised media",
+        "Represented Convivio in national televised media",
       ],
     }],
   },
@@ -1056,9 +989,9 @@ export const tracks: Tracks = {
   "RECRUITING": {
     "displayName": "Recruiting",
     "category": "Strengthening",
-    "description": "Strengthens Medium's team by bringing in excellent staff members",
+    "description": "Strengthens Convivio's team by bringing in excellent staff members",
     "milestones": [{
-      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Medium",
+      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Convivio",
       "signals": [
         "Reviews existing network for hiring leads regularly",
         "Shadows interviews to gain familiarity with process",
@@ -1078,7 +1011,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added observable evidence for every rating",
-        "Started a monthly brunch for candidates to meet Medium employees",
+        "Started a monthly brunch for candidates to meet Convivio employees",
         "Tested a new service for quality and diversity of candidates",
       ],
     }, {
@@ -1102,7 +1035,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Planned engineering summit on interview process and training",
-        "Organized and lead Medium's presence at a recruitment fair",
+        "Organized and lead Convivio's presence at a recruitment fair",
         "Started CODE2040 internship program",
       ],
     }, {
@@ -1176,13 +1109,80 @@ export const tracks: Tracks = {
       "summary": "Lives the company values, guards positive culture, and defines policies that support relatedness between teams",
       "signals": [
         "Brings separate teams together to build relatedness",
-        "Holds individuals, teams, and leadership accountable to Medium's values",
+        "Holds individuals, teams, and leadership accountable to Convivio's values",
         "Sets the tone, policy, and goals around maintaining an inclusive company",
       ],
       "examples": [
         "Organized wine and olive tasting offsite to Napa for the whole engineering org",
         "Devised, delivered and acted on findings from an engineer happiness survey",
         "Challenged and corrected exclusionary behaviour or policies",
+      ],
+    }],
+  },
+
+  "KNOWLEDGE": {
+    "displayName": "Knowledge",
+    "category": "Strengthening",
+    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
+    "milestones": [{
+      "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
+      "signals": [
+        "Makes themself available for informal support and advice",
+        "Acts as sounding board for peers and more junior members",
+        "Provides sound advice when asked",
+      ],
+      "examples": [
+        "Acted as an onboarding buddy",
+        "Paired with an engineer to help them with an unfamiliar area",
+        "Helped a colleague understand their feelings",
+      ],
+    }, {
+      "summary": "Mentors people proactively, and guides people to realizations rather than providing the answer",
+      "signals": [
+        "Takes time to explain concepts and best practices",
+        "Asks questions to illuminate concepts, rather than stating them",
+        "Allows others to lead efforts when it will help their development",
+      ],
+      "examples": [
+        "Shared interesting article with a team member to help with their growth",
+        "Offered unprompted feedback to help growth, with empathy",
+        "Lead from behind to support someone new to a leadership role",
+      ],
+    }, {
+      "summary": "Teaches small groups of engineers and contributes to Convivio's shared knowledge base",
+      "signals": [
+        "Avoids siloing information when it can be usefully shared with others",
+        "Works to increase the bus factor of systems",
+        "Finds tools that work best for a team member's personality",
+      ],
+      "examples": [
+        "Gave a brown bag presentation on payments",
+        "Wrote Hatch post on avoiding RDS backfill issues",
+        "Wrote Convivio-U content module",
+      ],
+    }, {
+      "summary": "Encourages people to mentor each other, and creates ways for them to do so",
+      "signals": [
+        "Defines an entire curriculum for a discipline",
+        "Draws positive attention to well-modeled mentor and teaching behaviours",
+        "Creates brown bag series and lines up speakers",
+      ],
+      "examples": [
+        "Created and lead Convivio's Women in Eng group",
+        "Organized an Eng All Hands with an outside speaker",
+        "Designed and taught web client guild curriculum",
+      ],
+    }, {
+      "summary": "Instills and promotes a culture of learning and development within the team",
+      "signals": [
+        "Sets incentive structures to recognise and reward mentorship",
+        "Empowers team members to develop themselves",
+        "Role models productive and healthy mentor relationships",
+      ],
+      "examples": [
+        "Instituted the professional education budget for engineers",
+        "Mentored mentors",
+        "Started the eng advisor program and lined up external mentors",
       ],
     }],
   },
