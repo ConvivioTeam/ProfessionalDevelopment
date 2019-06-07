@@ -495,6 +495,18 @@ export const tracks: Tracks = {
         "Lead technical delivery of 10/7",
         "Delivered multi-month engineering project on time",
       ],
+    }, {
+      "summary": "L6: Manages major company pushes delivered by multiple teams",
+      "signals": [
+        "Considers external constraints and business objectives when planning",
+        "Leads teams of teams, and coordinates effective cross-functional collaboration",
+        "Owns a key company metric",
+      ],
+      "examples": [
+        "Managed technical migration to SOA",
+        "Lead technical delivery of 10/7",
+        "Delivered multi-month engineering project on time",
+      ],
     }],
   },
 
@@ -552,6 +564,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
+      "signals": [
+        "Defines processes for clear communication for the entire team",
+        "Shares the right amount of information with the right people, at the right time",
+        "Develops and delivers plans to execs, the board, and outside investors",
+      ],
+      "examples": [
+        "Organized half year check-in company offsite",
+        "Created the communication plan for a large organizational change",
+        "Presented to the board about key company metrics and projects",
+      ],
+    }, {
+      "summary": "L6: Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
       "signals": [
         "Defines processes for clear communication for the entire team",
         "Shares the right amount of information with the right people, at the right time",
@@ -629,6 +653,18 @@ export const tracks: Tracks = {
         "Instituted and ensured success of a 20% time policy",
         "Started The Watch",
       ],
+    }, {
+      "summary": "L6: Enables and encourages the entire organization to make quality a central part of the development process",
+      "signals": [
+        "Defines policies for the engineering org that encourage quality work",
+        "Identifies and eliminates single points of failure throughout the organization",
+        "Secures time and resources from execs to support great quality",
+      ],
+      "examples": [
+        "Negotiated resources for Fix-It week with exec team",
+        "Instituted and ensured success of a 20% time policy",
+        "Started The Watch",
+      ],
     }],
   },
 
@@ -696,13 +732,25 @@ export const tracks: Tracks = {
         "Built Convivio Android prototype and convinced execs to fund it",
         "Convinced leadership and engineering org to move to Convivio Lite architecture",
       ],
+    }, {
+      "summary": "L6: Effects change that has a substantial positive impact on the whole company",
+      "signals": [
+        "Creates a new function to solve systemic issues",
+        "Galvanizes the entire company and garners buy in for a new strategy",
+        "Changes complex organizational processes",
+      ],
+      "examples": [
+        "Migrated the organization from Holacracy",
+        "Built Convivio Android prototype and convinced execs to fund it",
+        "Convinced leadership and engineering org to move to Convivio Lite architecture",
+      ],
     }],
   },
 
   "CAREER_DEVELOPMENT": {
     "displayName": "Career development",
     "category": "Supporting",
-    "description": "Provides strategic support to engineers to help them build the career they want",
+    "description": "Provides strategic support to colleagues to help them build the career they want",
     "milestones": [{
       "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
       "signals": [
@@ -753,6 +801,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
+      "signals": [
+        "Supports and develops senior leaders",
+        "Identified leadership training opportunities for senior leadership",
+        "Pushes everyone to be as good as they can be, with empathy",
+      ],
+      "examples": [
+        "Provided coaching to group leads",
+        "Devised Pathwise curriculum for group leads",
+        "Advocated to execs for engineer development resources and programs",
+      ],
+    }, {
+      "summary": "L6: Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
       "signals": [
         "Supports and develops senior leaders",
         "Identified leadership training opportunities for senior leadership",
@@ -830,6 +890,18 @@ export const tracks: Tracks = {
         "Directed resources to meaningfully improve diversity at all levels",
         "Built the growth framework rubric",
       ],
+    }, {
+      "summary": "L6: Leads initiatives to address issues stemming from hidden dynamics and company norms",
+      "signals": [
+        "Builds programs to train leadership in desired skills",
+        "Creates new structures that provide unique growth opportunities",
+        "Leads planning and communication for reorgs",
+      ],
+      "examples": [
+        "Lead efforts to increase number of mobile engineers",
+        "Directed resources to meaningfully improve diversity at all levels",
+        "Built the growth framework rubric",
+      ],
     }],
   },
 
@@ -887,6 +959,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Manages narratives, channels negativity into inspiration and motivation, and protects the entire team",
+      "signals": [
+        "Recognizes and points out narratives when appropriate",
+        "Works to reshape narratives from victimization to ownership",
+        "Increases the psychological safety of the entire team",
+      ],
+      "examples": [
+        "Converted group member from a problem haver to a problem solver",
+        "Challenged false narrative and redirected to compassion and empathy",
+        "Cultivated and championed a culture of empathy within the entire team",
+      ],
+    }, {
+      "summary": "L6: Manages narratives, channels negativity into inspiration and motivation, and protects the entire team",
       "signals": [
         "Recognizes and points out narratives when appropriate",
         "Works to reshape narratives from victimization to ownership",
@@ -964,6 +1048,18 @@ export const tracks: Tracks = {
         "De-escalated serious tensions between teams",
         "Rebuilt trust between senior team leads",
       ],
+    }, {
+      "summary": "L6: Resolves complex organizational dysfunction, or persistent conflict at senior levels",
+      "signals": [
+        "Takes control of dysfunctional teams to organise chaos",
+        "Repairs broken team dynamics and builds harmony",
+        "Presides over a well-oiled team of teams",
+      ],
+      "examples": [
+        "Turned around the performance of a problematic team",
+        "De-escalated serious tensions between teams",
+        "Rebuilt trust between senior team leads",
+      ],
     }],
   },
 
@@ -1021,6 +1117,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Introduces Convivio in a positive light to a wider audience outside the industry",
+      "signals": [
+        "Delivers key messages to broad, mainstream audiences",
+        "Influences people with large audiences to talk about Convivio positively",
+        "Drives recognition and adoption of Convivio in significant numbers",
+      ],
+      "examples": [
+        "Published or interviewed in a mainstream newspaper or website outside tech",
+        "Keynoted a conference with international attention",
+        "Represented Convivio in national televised media",
+      ],
+    }, {
+      "summary": "L6: Introduces Convivio in a positive light to a wider audience outside the industry",
       "signals": [
         "Delivers key messages to broad, mainstream audiences",
         "Influences people with large audiences to talk about Convivio positively",
@@ -1098,6 +1206,18 @@ export const tracks: Tracks = {
         "Organized efforts around convincing acquired engineers to join and stay",
         "Set goals, then tracked and reported metrics on team demographics over time",
       ],
+    }, {
+      "summary": "L6: Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale",
+      "signals": [
+        "Sets the tone, policy and goals around building a diverse, high-quality team",
+        "Identifies and brings in promising acquisitions",
+        "Tracks industry activity, identifying opportunities for critical roles",
+      ],
+      "examples": [
+        "Talked with a senior candidate over many months to fill a critical role",
+        "Organized efforts around convincing acquired engineers to join and stay",
+        "Set goals, then tracked and reported metrics on team demographics over time",
+      ],
     }],
   },
 
@@ -1165,6 +1285,18 @@ export const tracks: Tracks = {
         "Devised, delivered and acted on findings from an engineer happiness survey",
         "Challenged and corrected exclusionary behaviour or policies",
       ],
+    }, {
+      "summary": "L6: Lives the company values, guards positive culture, and defines policies that support relatedness between teams",
+      "signals": [
+        "Brings separate teams together to build relatedness",
+        "Holds individuals, teams, and leadership accountable to Convivio's values",
+        "Sets the tone, policy, and goals around maintaining an inclusive company",
+      ],
+      "examples": [
+        "Organized wine and olive tasting offsite to Napa for the whole engineering org",
+        "Devised, delivered and acted on findings from an engineer happiness survey",
+        "Challenged and corrected exclusionary behaviour or policies",
+      ],
     }],
   },
 
@@ -1222,6 +1354,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Instills and promotes a culture of learning and development within the team",
+      "signals": [
+        "Sets incentive structures to recognise and reward mentorship",
+        "Empowers team members to develop themselves",
+        "Role models productive and healthy mentor relationships",
+      ],
+      "examples": [
+        "Instituted the professional education budget for engineers",
+        "Mentored mentors",
+        "Started the eng advisor program and lined up external mentors",
+      ],
+    }, {
+      "summary": "L6: Instills and promotes a culture of learning and development within the team",
       "signals": [
         "Sets incentive structures to recognise and reward mentorship",
         "Empowers team members to develop themselves",
