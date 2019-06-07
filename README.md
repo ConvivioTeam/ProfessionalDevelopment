@@ -2,6 +2,8 @@
 
 This is our tool for planning and supporting our engineers' career development. It's based on Medium's [Snowflake](https://github.com/Medium/snowflake) tool.
 
+[![Build Status](https://travis-ci.org/ConvivioTeam/ProfessionalDevelopment.svg?branch=master)](https://travis-ci.org/ConvivioTeam/ProfessionalDevelopment)
+
 ![Convivio Professional Development](./cpd.png)
 
 ## Installation

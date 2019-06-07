@@ -57,15 +57,15 @@ const emptyState = (): SnowflakeAppState => {
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
       'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
+      'USERS': 0,
       'ORG_DESIGN': 0,
       'WELLBEING': 0,
       'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
+      'CAREER_DEVELOPMENT': 0,
+      'AMBASSADORSHIP': 0,
       'RECRUITING': 0,
-      'COMMUNITY': 0
+      'COMMUNITY': 0,
+      'KNOWLEDGE': 2
     },
     focusedTrackId: 'BACKEND'
   }
@@ -83,15 +83,15 @@ const defaultState = (): SnowflakeAppState => {
       'PROJECT_MANAGEMENT': 4,
       'COMMUNICATION': 1,
       'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
+      'USERS': 4,
       'ORG_DESIGN': 2,
       'WELLBEING': 0,
       'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
+      'CAREER_DEVELOPMENT': 3,
+      'AMBASSADORSHIP': 2,
       'RECRUITING': 3,
-      'COMMUNITY': 0
+      'COMMUNITY': 0,
+      'KNOWLEDGE': 2
     },
     focusedTrackId: 'BACKEND'
   }
