@@ -203,7 +203,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             Made by <a href="https://www.weareconvivio.com/" target="_blank">Convivio</a>.
             Based on work by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
             Get the <a href="https://github.com/ConvivioTeam/ProfessionalDevelopment" target="_blank">source code</a>,
-            or original <a href="https://github.com/Medium/snowflake">Medium source code</a>.
+            or the original <a href="https://github.com/Medium/snowflake">Medium source code</a>.
           </div>
         </div>
       </main>
