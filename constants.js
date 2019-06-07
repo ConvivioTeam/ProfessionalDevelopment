@@ -118,9 +118,9 @@ export const tracks: Tracks = {
   "BACKEND": {
     "displayName": "Backend",
     "category": "Building",
-    "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+    "description": "Develops expertise in server side technologies, including languages like PHP, Node, Go, Python and more",
     "milestones": [{
-      "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+      "summary": "Works effectively within established server-side frameworks, following current best practices",
       "signals": [
         "Delivers features requiring simple local modifications",
         "Adds simple actions that call server endpoints",
@@ -144,7 +144,7 @@ export const tracks: Tracks = {
         "Prototyped a simple new feature quickly",
       ],
     }, {
-      "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
+      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
       "signals": [
         "Implements complex features with a large product surface area",
         "Works effectively with  Android reactive programming framework",
@@ -156,7 +156,7 @@ export const tracks: Tracks = {
         "Informed the team about recent best practice changes and deprecations",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
       "signals": [
         "Pioneers architecture migration strategies that reduce programmer burden",
         "Fixes subtle memory management issues",
@@ -168,7 +168,19 @@ export const tracks: Tracks = {
         "Migrated Android persistance layer to reactive programming",
       ],
     }, {
-      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
+      "summary": "Builds complex, reusable architectures that pioneer best practices  that determine the practices for the whole business and is implemented for all clients",
+      "signals": [
+        "Defines long-term goals and ensures active projects are in service of them",
+        "Designs and builds innovative, industry-leading UI interactions",
+        "Invents new techniques to responsibly stretch limits of the Android platform",
+      ],
+      "examples": [
+        "Defined and drove complete migration plan to Swift or Kotlin",
+        "Implemented Android recycler views before platform support existed",
+        "Pioneered application-level abstractions for multi-app environment",
+      ],
+    }, {
+      "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for the business",
       "signals": [
         "Defines long-term goals and ensures active projects are in service of them",
         "Designs and builds innovative, industry-leading UI interactions",
@@ -224,6 +236,18 @@ export const tracks: Tracks = {
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "signals": [
+        "Pioneers architecture migrations that reduce programmer burden",
+        "Implements complex UI transitions that bring delight",
+        "Makes architectural decisions that eliminate entire classes of bugs",
+      ],
+      "examples": [
+        "Designed Convivio's post morpher and delta system",
+        "Implemented Convivio's scrolling text over image blur",
+        "Designed and pioneered proto-based model storage",
+      ],
+    }, {
+      "summary": "Builds complex, reusable architectures that pioneer best practices that determine the practices for the whole business and is implemented for all clients",
       "signals": [
         "Pioneers architecture migrations that reduce programmer burden",
         "Implements complex UI transitions that bring delight",
@@ -302,6 +326,18 @@ export const tracks: Tracks = {
         "Introduced Kinesis and pioneered streaming events pipeline",
       ],
     }, {
+      "summary": "Builds complex, reusable architectures that pioneer best practices that determine the practices for the whole business and is implemented for all clients",
+      "signals": [
+        "Designs transformational projects in service of long-term goals",
+        "Defines the strategic vision for foundational work and supporting technologies",
+        "Invents industry-leading techniques to solve complex problems",
+      ],
+      "examples": [
+        "Invented a novel ML technique that advanced the state of the art",
+        "Defined and developed Convivio's continuous delivery strategy",
+        "Developed and implemented HA strategy",
+      ],
+    }, {
       "summary": "Is an industry-leading expert in foundational engineering or sets strategic foundational direction for an eng team",
       "signals": [
         "Designs transformational projects in service of long-term goals",
@@ -321,7 +357,7 @@ export const tracks: Tracks = {
     "category": "Building",
     "description": "Develops expertise in data security, quality assurance, testing and automation",
     "milestones": [{
-      "summary": "Works effectively within established server side frameworks, following current best practices",
+      "summary": "Works effectively within established structures, following current best practices",
       "signals": [
         "Adds NodeJS endpoints using layers architecture",
         "Adds golang endpoints using Gotham architecture",
@@ -333,7 +369,7 @@ export const tracks: Tracks = {
         "Queried a Dynamo LSI appropriately",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Develops new instances of existing test or security architecture, or minor improvements to existing architecture",
       "signals": [
         "Assesses correctness and utility of existing code and avoids blind copy-pasting",
         "Generalizes code when appropriate",
@@ -345,7 +381,7 @@ export const tracks: Tracks = {
         "Updated Facebook API version and codebase dependencies",
       ],
     }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
+      "summary": "Designs standalone testing systems or security architectures of moderate complexity, or major new features in existing systems",
       "signals": [
         "Acts as primary maintainer for existing critical systems",
         "Integrates third party services effectively",
@@ -357,7 +393,7 @@ export const tracks: Tracks = {
         "Built Textshots server",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
+      "summary": "Builds complex, reusable architectures that ensure technical quality and security for other engineers, or multi-system services",
       "signals": [
         "Delivers complex systems that achieve their goals",
         "Avoids subtle architectural mistakes when considering new systems",
@@ -369,7 +405,19 @@ export const tracks: Tracks = {
         "Created Gotham framework for creating Go services",
       ],
     }, {
-      "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for an eng team",
+      "summary": "Builds complex, reusable architectures that ensure technical quality and security for the business and is implemented for all clients",
+      "signals": [
+        "Designs transformational projects of significant complexity and scope",
+        "Makes decisions that have positive, long term, wide ranging consequences",
+        "Identifies and solves systemic problems with current architecture",
+      ],
+      "examples": [
+        "Researched, vetted, and selected Go as Convivio's statically typed language",
+        "Defined microservices architecture and medium2 migration plan",
+        "Defined and implemented proprietary IP core to the company's success",
+      ],
+    }, {
+      "summary": "Is an industry-leading expert in technical testing, quality assurance or security or sets strategic testing, quality assurance or security practices of the business",
       "signals": [
         "Designs transformational projects of significant complexity and scope",
         "Makes decisions that have positive, long term, wide ranging consequences",
