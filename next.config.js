@@ -5,5 +5,6 @@ module.exports = {
       '/': { page: '/' }
     }
   },
+  distDir: 'build',
   assetPrefix: isProd ? 'http://cpd.weareconvivio.com' : ''
 }
