@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "8"
+  - "10"
+cache: 
+  yarn: true
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s
+  - export PATH="$HOME/.yarn/bin:$PATH"
+install:
+  - yarn
+script: yarn run test:CI
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: ./out
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  email: deploy@travis-ci.org
+  name: Deployment Bot
+  # fqdn: docs.hc-dos.co.uk
+  keep-history: true
+  on:
+    branch: master
