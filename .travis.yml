@@ -12,11 +12,11 @@ script: yarn run export
 deploy:
   provider: pages
   skip-cleanup: true
-  local-dir: ./out
+  # local-dir: ./
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   email: deploy@travis-ci.org
   name: Deployment Bot
-  # fqdn: docs.hc-dos.co.uk
+  fqdn: cpd.weareconvivio.com
   keep-history: true
   on:
     branch: master
